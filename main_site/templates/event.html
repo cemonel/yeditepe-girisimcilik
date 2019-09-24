@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    {% for event in events %}
+    <div>
+        <h1>{{event.title}}</h1>
+    </div>
+    <div>
+    <img src="{{event.photo.url}}">
+    </div>
+    {% endfor %}
+{% endblock %}

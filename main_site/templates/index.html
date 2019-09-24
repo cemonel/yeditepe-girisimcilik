@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    {% for message in info_messages %}
+    <div>
+        {{message.title}}
+    </div>
+    <div>
+        {{message.text}}
+    </div>
+    {% endfor %}
+{% endblock %}
